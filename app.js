@@ -2,8 +2,7 @@
 var prerender = require("prerender");
 
 var server = prerender({
-  chromeLocation: "/app/.apt/usr/bin/google-chrome",
-  pageDoneCheckInterval: 1000
+  chromeLocation: "/app/.apt/usr/bin/google-chrome"
 });
 
 server.use(prerender.sendPrerenderHeader());
