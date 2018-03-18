@@ -5,9 +5,6 @@ var server = prerender({
     chromeLocation: '/app/.apt/usr/bin/google-chrome'
 });
 
-var server = prerender({
-    chromeLocation: '/usr/bin/google-chrome'
-});
 server.use(prerender.sendPrerenderHeader());
 // server.use(prerender.blockResources());
 server.use(prerender.removeScriptTags());
